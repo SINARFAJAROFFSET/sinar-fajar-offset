@@ -5,7 +5,7 @@ const products = [
     id: 1,
     name: 'kalender1',
     description: 'Cetak kalender berkualitas dan elegan.',
-    image: '/images/kalender1.jpg',
+    image: "/images/kalender1.jpg",
   },
   {
     id: 2,
