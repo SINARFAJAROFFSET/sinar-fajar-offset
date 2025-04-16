@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductGallery from './ProductGallery';
-import FormPemesanan from './FormPemesanan.jsx';
+import FormPemesanan from './FormPemesanan';
 import Footer from './Footer';
 
 const HomePage = () => {
@@ -24,18 +24,14 @@ const HomePage = () => {
         <h2 className="text-2xl font-semibold mb-4">
           Tertarik? Yuk, pesan sekarang!
         </h2>
-        <a
-          href="#form-pemesanan"
-          className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl transition"
-        >
-          Form Pemesanan
+        <a href="#form-pemesanan" className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl transition">
+          FormPemesanan
         </a>
       </div>
 
-      {/* Form Pemesanan */}
+      {/* FormPemesanan */}
       <section id="form-pemesanan" className="px-4 md:px-10 my-20">
-        <h2 className="text-2xl font-semibold text-center mb-6">Form Pemesanan</h2>
-        <FormPemesanan />
+                <FormPemesanan />
       </section>
 
       {/* Footer */}
