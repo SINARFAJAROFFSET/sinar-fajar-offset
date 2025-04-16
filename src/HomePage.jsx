@@ -27,9 +27,10 @@ const HomePage = () => {
           Tertarik? Yuk, pesan sekarang!
         </h2>
  {/* Form Pemesanan */}
-        <a href="/form-pemesanan"
-          className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl transitio>Form Pemesanan</a>
-    
+        <section className="px-4 md:px-10 my-20">
+  <h2 className="text-2xl font-semibold text-center mb-6">Form Pemesanan</h2>
+  <FormPemesanan />
+</section>
       {/* Footer */}
       <Footer />
   </div>
