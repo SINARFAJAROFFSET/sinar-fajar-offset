@@ -5,19 +5,19 @@ const products = [
     id: 1,
     name: 'kalender1',
     description: 'Cetak kalender berkualitas dan elegan.',
-    image: '/images/kalender1.jpg',
+    image: '/images/kalender1.jpeg',
   },
   {
     id: 2,
     name: 'kalender2',
     description: 'Desain kalender yang menarik untuk promosi bisnis Anda.',
-    image: '/images/kalender2.jpg',
+    image: '/images/kalender2.jpeg',
   },
   {
     id: 3,
     name: 'kalender3',
     description: 'Kalender kerja yang profesional.',
-    image: '/images/kalender3.jpg',
+    image: '/images/kalender3.jpeg',
   },
 ];
 
