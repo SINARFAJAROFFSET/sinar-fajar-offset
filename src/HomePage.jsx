@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ProductGallery from './components/ProductGallery'; //
+import ProductGallery from './components/ProductGallery'; 
 
 export default function HomePage() {
   return (
