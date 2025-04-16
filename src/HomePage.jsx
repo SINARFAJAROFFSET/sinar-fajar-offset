@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductGallery from './ProductGallery';
-import FormPemesanan from './components/FormPemesanan';
+import FormPemesanan from './components/FormPemesanan.jsx';
 import Footer from './Footer';
 
 const HomePage = () => {
