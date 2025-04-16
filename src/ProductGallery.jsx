@@ -1,7 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'; //
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+
 
 const products = [
   {
@@ -35,6 +36,9 @@ const ProductGallery = () => {
         spaceBetween={30}
         slidesPerView={1}
         breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
           768: {
             slidesPerView: 2,
           },
