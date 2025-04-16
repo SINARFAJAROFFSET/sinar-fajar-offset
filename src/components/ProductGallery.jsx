@@ -1,4 +1,7 @@
-import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const products = [
   {
@@ -25,19 +28,32 @@ const ProductGallery = () => {
   return (
     <div className="py-10 px-4 md:px-10 bg-gray-50">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Galeri Produk</h2>
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+
+      <Swiper
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+      >
         {products.map((product) => (
-          <div key={product.id} className="bg-white shadow-md rounded-2xl overflow-hidden">
-            <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-800">{product.name}</h3>
+          <SwiperSlide key={product.id}>
+            <div className="bg-white shadow-md rounded-2xl overflow-hidden p-4">
+              <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-xl" />
+              <h3 className="text-xl font-semibold text-gray-800 mt-4">{product.name}</h3>
               <p className="text-gray-600 text-sm mt-1">{product.description}</p>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };
-
 export default ProductGallery;
